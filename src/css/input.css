@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 @layer components {
- .effect-li {
+  .effect-li {
     @apply hover:underline;
- }
- .button-sign {
+  }
+  .button-sign {
     @apply py-[6px] border w-full h-full rounded-md text-sm  text-center cursor-pointer;
- }
+  }
+   .button-menu {
+    @apply px-5 py-2 rounded-lg hover:bg-[#44B963] hover:text-white hover:scale-105 transition-all;
+   }
 }
-
-

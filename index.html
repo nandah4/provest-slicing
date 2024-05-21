@@ -11,11 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
   </head>
   <body>
     <div class="bg-[#202A54]">
       <div
-        class="h-full mx-auto px-4 py-5 md:flex md:justify-between md:border lg:container md:container md:items-center"
+        class="h-full mx-auto px-4 py-5 md:flex md:justify-between lg:container md:container md:items-center"
       >
         <div>
           <h1
@@ -37,13 +41,23 @@
           </ul>
         </div>
         <div class="flex gap-x-2 md:gap-x-7 md:items-center">
-          <a href="" class=" button-sign bg-white md:border-0 md:bg-transparent md:text-white"> Log in</a>
-          <a href="" class=" button-sign text-white md:px-6 md:py-2 md:rounded-3xl"> Register</a>
+          <a
+            href=""
+            class="button-sign bg-white md:border-0 md:bg-transparent md:text-white"
+          >
+            Log in</a
+          >
+          <a
+            href=""
+            class="button-sign text-white md:px-6 md:py-2 md:rounded-3xl"
+          >
+            Register</a
+          >
         </div>
       </div>
     </div>
 
-    <div class="h-full w-full overflow-hidden md:relative">
+    <div class="h-full w-full overflow-hidden md:relative mb-16">
       <img
         src="./src/assets/bg.jpg"
         alt=""
@@ -52,16 +66,14 @@
       <div
         class="w-full h-full grid grid-cols-1 md:absolute top-0 md- left-0 md:grid-cols-2 md:bg-gradient-to-r from-transparent to-[#E8F2FD]"
       >
-        <div
-          class="flex justify-center md:justify-end md:order-last w-full h-full"
-        >
+        <div class="flex justify-center md:justify-end md:order-last">
           <img
             src="./src/assets/assets-1.png"
             alt="bacdrop"
             class="md:mr-6 lg:mr-14"
           />
         </div>
-        <div class="self-center px-4 md:ml-12 lg:ml-12 md:w-3/4">
+        <div class="self-center mx-4 md:ml-14 lg:ml-14 md:w-3/4">
           <h1
             class="text-center md:text-left font-bold text-4xl text-[#202A54]"
           >
@@ -77,6 +89,98 @@
       </div>
     </div>
 
+    <div class="container lg:mx-10 mx-auto mb-10">
+      <div class="flex gap-5 mx-4 flex-wrap justify-center md:justify-start md">
+        <button class="bg-[#44B963] text-white button-menu">
+          <a href="">All Properties</a>
+        </button>
+        <button class="border text-slate-600 button-menu">
+          <a href="">Open for Finance</a>
+        </button>
+        <button class="border text-slate-600 button-menu">
+          <a href="">Under Development</a>
+        </button>
+        <button class="border text-slate-600 button-menu">
+          <a href="">Completed</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="border mx-4 rounded-lg p-4 shadow-sm">
+          <div class="h-52 w-full overflow-hidden rounded-lg">
+            <img
+              src="./src/assets/house-1.jpg"
+              class="object-cover w-full h-full"
+              alt="Mansion"
+            />
+          </div>
+          <div>
+            <div class="my-3">
+              <div class="flex items-center">
+                <i class="uil uil-map-marker text-2xl text-[#44B963]"></i>
+                <p class="ml-2 mt-[2px] text-medium font-semibold">
+                  Campos de Maullin Lottery
+                </p>
+              </div>
+              <div class="flex items-center">
+                <i class="uil uil-usd-circle text-2xl text-[#1179EC]"></i>
+                <p class="ml-2 mt-[2px] text-medium font-semibold">
+                  48, 900,000 Valuation
+                </p>
+              </div>
+            </div>
+            <div class="my-4">
+              <div class="bg-[#ECF8EF] w-full h-3 rounded-lg my-2">
+                <div class="bg-[#1179EC] w-11/12 h-3 rounded-lg"></div>
+              </div>
+              <div class="flex justify-between">
+                <p class="font-semibold text-sm">
+                  <i class="uil uil-dollar-sign"></i>850,000,000 raised
+                </p>
+                <p class="text-sm font-semibold">80%</p>
+              </div>
+            </div>
+            <div
+              class="flex justify-between items-center xs:flex-wrap xs:gap-y-3 w-full gap-x-4"
+            >
+              <div
+                class="border border-[#44B963] rounded-lg bg-[#ECF8EF] w-full p-2"
+              >
+                <div class="flex justify-between mb-2">
+                  <p class="font-medium">Total Return</p>
+                  <i class="uil uil-info-circle text-base font-medium"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-base">17.9% - 23.8%</p>
+                </div>
+              </div>
+              <div
+                class="border border-[#1179EC] rounded-lg bg-[#ECF8EF] w-full p-2"
+              >
+                <div class="flex justify-between mb-2">
+                  <p class="font-medium">Rent Annualize</p>
+                  <i class="uil uil-info-circle text-base font-medium"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-base">12.1% - 25.8%</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full justify-between gap-x-4 mt-4">
+              <button class="w-full border py-2 rounded-xl">Invest Now</button>
+              <button class="w-full border py-2 rounded-xl">More Info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="mb-96"></div>
+    <script
+      src="https://kit.fontawesome.com/b2ce077149.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

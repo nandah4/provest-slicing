@@ -6,6 +6,11 @@ module.exports = {
       fontFamily: {
         monserat: "Montserrat",
       },
+      screens: {
+        xs: {
+          max: "360px",
+        },
+      },
     },
   },
   plugins: [],
