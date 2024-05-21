@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+ .effect-li {
+    @apply hover:underline;
+ }
+ .button-sign {
+    @apply py-[6px] border w-full h-full rounded-md text-sm  text-center cursor-pointer;
+ }
+}
+
+
