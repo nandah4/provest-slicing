@@ -28,7 +28,7 @@
     @apply ml-3 text-base font-medium text-slate-900;
    }
    .card-div2 {
-    @apply w-full border py-3 rounded-xl tracking-wide hover:bg-[#1179EC] hover:text-white hover:ring-1 transition-all;
+    @apply w-full border border-slate-400 py-3 rounded-xl tracking-wide hover:bg-[#1179EC] hover:text-white hover:ring-1 transition-all;
    }
 }
 
