@@ -2,12 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+   h1 {
+    @apply text-[52px]
+  }
+  h2 {
+    @apply text-[26px]  
+  } 
+}
+
 @layer components {
   .effect-li {
     @apply hover:underline;
   }
   .button-sign {
-    @apply py-[6px] border w-full h-full rounded-md text-sm  text-center cursor-pointer;
+    @apply py-2 px-10 border rounded-lg text-sm xl:text-base text-center cursor-pointer;
   }
    .button-menu {
     @apply px-5 py-2 rounded-lg hover:bg-[#44B963] hover:text-white hover:scale-105 transition-all;
