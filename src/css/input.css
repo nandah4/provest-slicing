@@ -12,4 +12,14 @@
    .button-menu {
     @apply px-5 py-2 rounded-lg hover:bg-[#44B963] hover:text-white hover:scale-105 transition-all;
    }
+   .card {
+    @apply border mx-4 rounded-lg p-4 shadow-sm;
+   }
+   .card-div1 {
+    @apply ml-3 text-base font-medium text-slate-900;
+   }
+   .card-div2 {
+    @apply w-full border py-3 rounded-xl tracking-wide hover:bg-[#1179EC] hover:text-white hover:ring-1 transition-all;
+   }
+  
 }

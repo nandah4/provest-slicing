@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="./public/css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -16,7 +18,7 @@
       href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
     />
   </head>
-  <body>
+  <body class="font-poppins">
     <div class="bg-[#202A54]">
       <div
         class="h-full mx-auto px-4 py-5 md:flex md:justify-between lg:container md:container md:items-center"
@@ -107,61 +109,66 @@
     </div>
 
     <div class="container mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div class="border mx-4 rounded-lg p-4 shadow-sm">
-          <div class="h-52 w-full overflow-hidden rounded-lg">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-3">
+        <div class="card">
+          <div class="relative h-64 w-full overflow-hidden rounded-lg">
             <img
               src="./src/assets/house-1.jpg"
-              class="object-cover w-full h-full"
+              class="object-cover w-full h-full hover:scale-105 duration-700"
               alt="Mansion"
             />
+            <button
+              class="text-sm absolute left-3 bottom-3 w-auto px-4 py-2 bg-white rounded-lg font-medium hover:ring-1"
+            >
+              Open Funding
+            </button>
           </div>
           <div>
-            <div class="my-3">
+            <div class="my-4">
               <div class="flex items-center">
                 <i class="uil uil-map-marker text-2xl text-[#44B963]"></i>
-                <p class="ml-2 mt-[2px] text-medium font-semibold">
-                  Campos de Maullin Lottery
-                </p>
+                <p class="card-div1">Campos de Maullin Lottery</p>
               </div>
               <div class="flex items-center">
                 <i class="uil uil-usd-circle text-2xl text-[#1179EC]"></i>
-                <p class="ml-2 mt-[2px] text-medium font-semibold">
-                  48, 900,000 Valuation
-                </p>
+                <p class="card-div1">48,900,000 Valuation</p>
               </div>
             </div>
+
             <div class="my-4">
               <div class="bg-[#ECF8EF] w-full h-3 rounded-lg my-2">
                 <div class="bg-[#1179EC] w-11/12 h-3 rounded-lg"></div>
               </div>
               <div class="flex justify-between">
-                <p class="font-semibold text-sm">
+                <p class="card-div1 ml-0">
                   <i class="uil uil-dollar-sign"></i>850,000,000 raised
                 </p>
-                <p class="text-sm font-semibold">80%</p>
+                <p class="card-div1 ml-0">80%</p>
               </div>
             </div>
+
             <div
-              class="flex justify-between items-center xs:flex-wrap xs:gap-y-3 w-full gap-x-4"
+              class="flex justify-between items-center xs:flex-wrap xs:gap-y-3 w-full gap-x-4 mb-3"
             >
               <div
-                class="border border-[#44B963] rounded-lg bg-[#ECF8EF] w-full p-2"
+                class="border border-[#44B963] rounded-xl bg-[#ECF8EF] w-full p-3"
               >
                 <div class="flex justify-between mb-2">
-                  <p class="font-medium">Total Return</p>
-                  <i class="uil uil-info-circle text-base font-medium"></i>
+                  <p class="text-sm font-medium">Total Return</p>
+                  <i class="uil uil-info-circle font-medium -mt-1"></i>
                 </div>
                 <div>
                   <p class="font-bold text-base">17.9% - 23.8%</p>
                 </div>
               </div>
               <div
-                class="border border-[#1179EC] rounded-lg bg-[#ECF8EF] w-full p-2"
+                class="border border-[#1179EC] rounded-xl bg-[#ECF8EF] w-full p-3"
               >
                 <div class="flex justify-between mb-2">
-                  <p class="font-medium">Rent Annualize</p>
-                  <i class="uil uil-info-circle text-base font-medium"></i>
+                  <p class="text-sm font-medium">Rent Annualize</p>
+                  <i
+                    class="uil uil-info-circle text-base font-medium -mt-1"
+                  ></i>
                 </div>
                 <div>
                   <p class="font-bold text-base">12.1% - 25.8%</p>
@@ -169,10 +176,132 @@
               </div>
             </div>
             <div class="flex w-full justify-between gap-x-4 mt-4">
-              <button class="w-full border py-2 rounded-xl">Invest Now</button>
-              <button class="w-full border py-2 rounded-xl">More Info</button>
+              <button class="card-div2">Invest Now</button>
+              <button class="card-div2">More Info</button>
             </div>
           </div>
+        </div>
+
+        <div class="card">
+          <div class="relative h-64 w-full overflow-hidden rounded-lg">
+            <img
+              src="./src/assets/house-2.jpg"
+              class="object-cover w-full h-full hover:scale-105 duration-700"
+              alt="Mansion"
+            />
+            <button
+              class="text-sm absolute left-3 bottom-3 w-auto px-4 py-2 bg-white rounded-lg font-medium hover:ring-1"
+            >
+              Open Funding
+            </button>
+          </div>
+          <div>
+            <div class="my-4">
+              <div class="flex items-center">
+                <i class="uil uil-map-marker text-2xl text-[#44B963]"></i>
+                <p class="card-div1">Campos de Maullin Lottery</p>
+              </div>
+              <div class="flex items-center">
+                <i class="uil uil-usd-circle text-2xl text-[#1179EC]"></i>
+                <p class="card-div1">900,000,000 Valuation</p>
+              </div>
+            </div>
+
+            <div class="my-4">
+              <div class="bg-[#ECF8EF] w-full h-3 rounded-lg my-2">
+                <div class="bg-[#1179EC] w-11/12 h-3 rounded-lg"></div>
+              </div>
+              <div class="flex justify-between">
+                <p class="card-div1 ml-0">
+                  <i class="uil uil-dollar-sign"></i>900,000,000 raised
+                </p>
+                <p class="card-div1 ml-0">80%</p>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-between items-center xs:flex-wrap xs:gap-y-3 w-full gap-x-4 mb-3"
+            >
+              <div
+                class="border border-[#44B963] rounded-xl bg-[#ECF8EF] w-full p-3"
+              >
+                <div class="flex justify-between mb-2">
+                  <p class="text-sm font-medium">Total Return</p>
+                  <i class="uil uil-info-circle font-medium -mt-1"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-base">17.9% - 23.8%</p>
+                </div>
+              </div>
+              <div
+                class="border border-[#1179EC] rounded-xl bg-[#ECF8EF] w-full p-3"
+              >
+                <div class="flex justify-between mb-2">
+                  <p class="text-sm font-medium">Rent Annualize</p>
+                  <i
+                    class="uil uil-info-circle text-base font-medium -mt-1"
+                  ></i>
+                </div>
+                <div>
+                  <p class="font-bold text-base">12.1% - 25.8%</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full justify-between gap-x-4 mt-4">
+              <button class="card-div2">Property Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="relative h-64 w-full overflow-hidden rounded-lg">
+            <img
+              src="./src/assets/house-2.jpg"
+              class="object-cover w-full h-full hover:scale-105 duration-700"
+              alt="Mansion"
+            />
+            <button
+              class="text-sm absolute left-3 bottom-3 w-auto px-4 py-2 bg-white rounded-lg font-medium hover:ring-1"
+            >
+              Open Funding
+            </button>
+          </div>
+            <div class="flex items-center my-4">
+              <i class="uil uil-map-marker text-2xl text-[#44B963]"></i>
+              <p class="card-div1">Campos de Maullin Lottery</p>
+            </div>    
+            <div class="my-3 flex justify-between gap-5">
+              <div class=" w-full">
+                <h1 class="uppercase text-xs font-semibold mb-4">Total Profitability</h1>
+                <div class="border rounded-lg text-sm font-medium border-[#44B963] p-4 relative bg-[#ECF8EF]">
+                  <i class="fa-solid fa-circle-arrow-up absolute right-2 top-4 text-[#44B963]"></i>
+                  <h2 class="text-center mb-2">Obtained</h2>
+                  <h1 class="text-center text-2xl font-bold">31.0%</h1>
+                </div>
+                <div class="border rounded-lg text-sm font-medium border-[#44B963] p-3 bg-[#ECF8EF] mt-5">
+              
+                  <h2 class="text-center mb-2">Expected</h2>
+                  <h1 class="text-center text-2xl font-bold">18.1%</h1>
+                </div>
+  
+              </div>
+              <div class="  w-full">
+                <h1 class="uppercase text-xs font-semibold mb-4">Annual Profitability</h1>
+                <div class="border rounded-lg text-sm font-medium border-[#44B963] p-4 relative bg-[#ECF8EF]">
+                  <i class="fa-solid fa-circle-arrow-up absolute right-2 top-4 text-[#1179EC]"></i>
+                  <h2 class="text-center mb-2">Obtained</h2>
+                  <h1 class="text-center text-2xl font-bold">20.7%</h1>
+                </div>
+                <div class="border rounded-lg text-sm font-medium border-[#44B963] p-3 bg-[#ECF8EF] mt-5">
+              
+                  <h2 class="text-center mb-2">Expected</h2>
+                  <h1 class="text-center text-2xl font-bold">12.1%</h1>
+                </div>
+  
+              </div>
+
+              
+
+            </div>  
         </div>
       </div>
     </div>

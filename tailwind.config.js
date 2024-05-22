@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        monserat: "Montserrat",
+        poppins: "Poppins",
       },
       screens: {
         xs: {
