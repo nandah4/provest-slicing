@@ -19,7 +19,7 @@
     @apply py-2 px-10 border rounded-lg text-sm xl:text-base text-center cursor-pointer;
   }
    .button-menu {
-    @apply px-5 py-2 rounded-lg hover:bg-[#44B963] hover:text-white hover:scale-105 transition-all;
+    @apply px-5 vxs:w-full py-2 rounded-lg hover:bg-[#44B963] hover:text-white transition-all;
    }
    .card {
     @apply border mx-4 rounded-lg p-4 shadow-sm;
@@ -30,5 +30,8 @@
    .card-div2 {
     @apply w-full border py-3 rounded-xl tracking-wide hover:bg-[#1179EC] hover:text-white hover:ring-1 transition-all;
    }
-  
+}
+
+@layer utilities {
+
 }

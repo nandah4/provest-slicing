@@ -6,7 +6,13 @@ module.exports = {
       fontFamily: {
         poppins: "Poppins",
       },
+      fontSize: {
+        xs: '13px'
+      },
       screens: {
+        vxs: {
+          max: '335px'
+        },
         xs: {
           max: "360px",
         },
