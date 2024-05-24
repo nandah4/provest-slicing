@@ -25,7 +25,10 @@
     @apply border mx-4 rounded-xl p-4 shadow-sm;
    }
    .card-div1 {
-    @apply ml-3 text-sm md:text-base font-medium text-slate-700;
+    @apply ml-3 text-sm md:text-base font-medium text-slate-900;
+   }
+   .card-image {
+    @apply relative h-64 w-full overflow-hidden rounded-lg;
    }
    .card-div2 {
     @apply w-full border border-slate-400 py-3 rounded-xl tracking-wide hover:bg-[#1179EC] hover:text-white hover:ring-1 transition-all text-sm;

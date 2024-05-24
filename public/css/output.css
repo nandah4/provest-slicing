@@ -666,7 +666,7 @@ h2 {
   line-height: 1.25rem;
   font-weight: 500;
   --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -674,6 +674,14 @@ h2 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+
+.card-image {
+  position: relative;
+  height: 16rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 
 .card-div2 {
@@ -847,6 +855,34 @@ h2 {
   width: 100%;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1017,6 +1053,16 @@ h2 {
   padding-bottom: 1.25rem;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1051,6 +1097,19 @@ h2 {
 
 .text-xs {
   font-size: 13px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1113,6 +1172,15 @@ h2 {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .transition-all {
@@ -1203,6 +1271,10 @@ h2 {
     padding-right: 0.75rem;
   }
 
+  .sm\:pr-1 {
+    padding-right: 0.25rem;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1216,6 +1288,14 @@ h2 {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-\[1px\] {
+    font-size: 1px;
+  }
+
+  .sm\:text-xs {
+    font-size: 13px;
   }
 }
 
@@ -1470,6 +1550,23 @@ h2 {
     padding-right: 1.5rem;
   }
 
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .lg\:pr-2 {
+    padding-right: 0.5rem;
+  }
+
+  .lg\:pr-5 {
+    padding-right: 1.25rem;
+  }
+
+  .lg\:pr-3 {
+    padding-right: 0.75rem;
+  }
+
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1495,14 +1592,31 @@ h2 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .xl\:text-\[15px\] {
+    font-size: 15px;
+  }
+
+  .xl\:font-semibold {
+    font-weight: 600;
+  }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 365px) {
+  .xs\:flex-col {
+    flex-direction: column;
+  }
+
   .xs\:flex-wrap {
     flex-wrap: wrap;
   }
 
   .xs\:gap-y-3 {
     row-gap: 0.75rem;
+  }
+
+  .xs\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
