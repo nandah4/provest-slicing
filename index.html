@@ -19,9 +19,11 @@
     />
   </head>
   <body class="font-poppins scroll-smooth">
+
+    <!-- HEADER -->
     <div class="bg-[#202A54]">
       <div
-        class="mx-auto px-4 py-5 md:flex md:justify-between md:duration-700 md:container md:px-2 md:py-5 xl:py-6 md:items-center"
+        class=" border mx-auto px-4 py-5 md:flex md:justify-between md:duration-700 md:container md:px-4 lg:px-6 md:py-5 md:items-center"
       >
         <div class="flex items-center">
           <i
@@ -62,42 +64,51 @@
       </div>
     </div>
 
-    <div class="h-full w-full overflow-hidden md:relative mb-12">
+    <!-- HERO SECTION -->
+    <div class="overflow-hidden md:relative mb-12 transition-all">
       <img
         src="./src/assets/bg.jpg"
         alt=""
         class="w-full h-[400px] object-cover hidden md:block"
       />
-      <div
-        class="w-full h-full grid grid-cols-1 md:absolute top-0 md:left-0 md:grid-cols-2 md:bg-gradient-to-r md:from-transparent md:to-[#E8F2FD]"
-      >
-        <div
+     
+      <div class="w-full h-full md:absolute md:top-0 md:left-0 md:bg-gradient-to-r md:from-transparent md:to-[#E8F2FD]">
+
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 border border-red-600">
+          <div
           class="flex justify-center container md:justify-end md:order-last items-center mx-auto"
         >
           <img
             src="./src/assets/bg-2.png"
             alt="bacdrop"
-            class="object-cover md:mr-2 lg:mr-6 xl:mr-10"
+            class="object-cover"
           />
         </div>
         <div
-          class="container mx-auto self-center md:ml-8 lg:w-5/6 xl:ml-12 px-2 sm:px-0"
+          class="container mx-auto self-center px-2 sm:px-3 md:px-4 lg:px-6"
         >
           <h2
-            class="text-center sm:text-3xl md:text-4xl lg:text-5xl leading-9 md:text-left font-bold text-[#202A54]"
+            class="text-center sm:text-3xl lg:text-5xl leading-9 md:text-left font-bold text-[#202A54]"
           >
             Empowering Your Real Estate Journey with Innovation
           </h2>
           <p
-            class="mt-3 text-center md:text-left md:w-4/5 text-slate-700 text-xs sm:text-sm md:text-base font-normal md:mt-6"
+            class="mt-3 text-center md:text-left md:w-4/5 text-slate-700 text-xs sm:text-sm lg::text-base font-normal md:mt-6"
           >
             We simplify buying, selling, and investing in properties with
             advanced technology and user-friendly tools.
           </p>
         </div>
+        </div>
       </div>
+      <!-- <div
+        class="w-full h-full grid grid-cols-1 md:absolute top-0 md:left-0 md:grid-cols-2 "
+      >
+        
+      </div> -->
     </div>
 
+    <!-- CONTENT-2 -->
     <div class="container mx-auto px-4 sm:px-0 mb-8 lg:px-8 xl:px-3">
       <div class="flex gap-3 flex-wrap justify-center lg:justify-start">
         <button class="bg-[#44B963] text-white button-menu">
@@ -739,7 +750,21 @@
       </div>
     </div>
 
-    <div class="mb-96"></div>
+    <div class="bg-[#F4F4F4] mt-16 pt-8 relative md:pt-0">
+      <div class="container mx-auto px-3 md:absolute md:z-10 md:top-1/2 md:-translate-y-1/2 md:left-0 md:right-0 md:w-3/5">
+        <p class="text-center text-2xl font-semibold mb-2 text-slate-800 md:text-4xl lg:text-5xl md:mb-4">Interested to invest on real estate or want learn more?</p>
+        <p class="text-center text-xs md:text-sm lg:text-base md:font-medium text-slate-800 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium numquam natus voluptatum recusandae facilis excepturi beatae.</p>
+        <p class="text-center mb-3 md:mb-4"><a href="" class="py-2 px-6 bg-[#44B963] rounded-2xl text-xs text-white tracking-wide">Sign In</a></p>
+      </div>
+      <div class="md:w-full md:h-full md:bg-white md:opacity-45 absolute"></div>
+      <div class="w-full lg:h-4/6">
+        <img src="./src/assets/revisi.png" alt="" class="object-cover w-full h-full">
+      </div>
+    </div>
+
+    <div class="bg-[#202A54] w-full h-96">
+
+    </div>
     <script
       src="https://kit.fontawesome.com/b2ce077149.js"
       crossorigin="anonymous"
