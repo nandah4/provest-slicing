@@ -12,6 +12,18 @@
 }
 
 @layer components {
+  .menu {
+    @apply -top-[1000px] md:top-0 md:relative left-0 right-0   
+  }
+  .menu.menu-active {
+    @apply top-[114px] md:top-0 block left-0 right-0
+  }
+  .auth {
+    @apply -top-[1000px] md:top-0 md:relative left-0 right-0  absolute  
+  }
+  .auth.menu-active {
+    @apply top-0 pt-5 pb-2 md:p-0 block left-0 right-0 relative
+  }
   .effect-li {
     @apply hover:underline;
   }

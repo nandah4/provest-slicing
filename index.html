@@ -21,46 +21,50 @@
   <body class="font-poppins scroll-smooth">
 
     <!-- HEADER -->
-    <div class="bg-[#202A54]">
+    <div class="bg-[#202A54] top-0 sticky z-50">
       <div
         class=" mx-auto px-4 py-5 md:flex md:justify-between md:duration-700 md:container md:px-4 lg:px-6 md:py-5 md:items-center"
       >
-        <div class="flex items-center">
+        <div class="flex justify-between items-center z-50">
           <i
             class="uil uil-estate text-[#44B963] hidden md:text-2xl md:block"
           ></i>
           <h1
-            class="text-white text-xl md:text-2xl lg:tracking-wide mb-4 md:mb-0 md:ml-2"
+            class="text-white text-xl md:text-2xl lg:tracking-wide md:mb-0 md:ml-2"
           >
             Provest
           </h1>
+          <i class="fa-solid fa-bars text-2xl text-white md:absolute -top-[1000px]"></i>
         </div>
-        <div>
-          <ul
-            class="flex flex-col gap-y-4 text-sm xl:text-base text-white font-light mb-5 md:mb-0 md:flex-row md:gap-x-4 lg:gap-x-8 xl:gap-x-9 md:items-center cursor-pointer"
-          >
-            <li class="effect-li">Home</li>
-            <li class="effect-li">Properties</li>
-            <li class="effect-li">How it Works</li>
-            <li class="effect-li">Insight</li>
-            <li class="effect-li">FAQs</li>
-            <li class="effect-li">About Us</li>
-          </ul>
-        </div>
-        <div class="flex gap-x-2 md:gap-x-4 md:items-center">
-          <a
-            href=""
-            class="button-sign bg-white md:px-2 lg:px-4 md:border-0 md:bg-transparent md:text-white"
-          >
-            Log in</a
-          >
-          <a
-            href=""
-            class="button-sign text-white md:px-5 md:hover:bg-white md:hover:text-black md:hover:duration-700 md:py-2 md:rounded-3xl"
-          >
-            Sign Up</a
-          >
-        </div>
+
+          <div class="m-3 p-5 md:p-0 md:m-0 rounded-lg  bg-[#202A54] menu absolute md:relative z-10">
+            <ul
+              class="flex flex-col gap-y-4 text-sm xl:text-base text-white font-light mb-5 md:mb-0 md:flex-row md:gap-x-4 lg:gap-x-8 xl:gap-x-9 md:items-center cursor-pointer"
+            >
+              <li class="effect-li">Home</li>
+              <li class="effect-li">Properties</li>
+              <li class="effect-li">How it Works</li>
+              <li class="effect-li">Insight</li>
+              <li class="effect-li">FAQs</li>
+              <li class="effect-li">About Us</li>
+            </ul>
+          </div>
+
+          <div class="flex gap-x-2 md:gap-x-4 md:items-center auth md:relative ">
+            <a
+              href=""
+              class="button-sign bg-white md:px-2 lg:px-4 md:border-0 md:bg-transparent md:text-white"
+            >
+              Log in</a
+            >
+            <a
+              href=""
+              class="button-sign text-white md:px-5 md:hover:bg-white md:hover:text-black md:hover:duration-700 md:py-2 md:rounded-3xl"
+            >
+              Sign Up</a
+            >
+          </div>
+         
       </div>
     </div>
 
@@ -980,7 +984,7 @@
 
     <!-- FOOTER -->
     <div class="bg-[#202A54] w-full h-full">
-      <div class="container mx-auto px-2 grid grid-cols-1 lg:grid-cols-3 gap-4 md:pt-24">
+      <div class="container mx-auto px-2 grid grid-cols-1 lg:grid-cols-3 gap-4 pt-24">
         <!-- Div 1 -->
         <div class="md:col-span-1 px-5 ">
           <div class="flex items-center mb-4">
@@ -1029,9 +1033,31 @@
         </div>
     </div>
 
+    <script>
+    
+    const hamburger = document.querySelector('.fa-bars');
+    const menu = document.querySelector('.menu');
+    const additionalMenu = document.querySelectorAll('.auth')
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('menu-active');
+      additionalMenu.forEach((additionalMenu) => {
+        additionalMenu.classList.toggle('menu-active');
+      })
+
+      const isOpen = menu.classList.contains('menu-active');
+
+      hamburger.classList = isOpen
+      ? 'fa-solid fa-xmark text-white text-2xl md:hidden md:absolute -top-[1000px]'
+      : 'fa-solid fa-bars text-white text-2xl md:hidden md:absolute -top-[1000px]'
+    });
+
+
+    </script>
+
     <script
       src="https://kit.fontawesome.com/b2ce077149.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+  </script>
   </body>
 </html>
