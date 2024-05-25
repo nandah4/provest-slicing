@@ -16,7 +16,7 @@
     @apply -top-[1000px] md:top-0 md:relative left-0 right-0   
   }
   .menu.menu-active {
-    @apply top-[114px] md:top-0 block left-0 right-0
+    @apply top-[113px] md:top-0 block left-0 right-0
   }
   .auth {
     @apply -top-[1000px] md:top-0 md:relative left-0 right-0  absolute  
