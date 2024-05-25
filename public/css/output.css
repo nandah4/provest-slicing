@@ -1133,6 +1133,10 @@ h2 {
   padding-top: 6rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .text-center {
   text-align: center;
 }
